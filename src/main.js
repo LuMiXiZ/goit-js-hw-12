@@ -101,7 +101,7 @@ moreBtn.addEventListener('click', async () => {
 
 function scrollGallery() {
   const card = document.querySelector('.gallery-item');
-  if (!firstCard) return;
+  if (!card) return;
   const cardHeight = card.getBoundingClientRect().height;
   window.scrollBy({
     top: cardHeight * 2,
